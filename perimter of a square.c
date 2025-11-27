@@ -5,6 +5,6 @@ int main(){
     printf("Enter the side of a Square:");
     scanf("%lf",&n);
     peri = 4*n;
-    printf("The area of the Square if side %.2lf is: %.3lf",n,peri);
+    printf("The perimeter of the Square if side %.2lf is: %.3lf",n,peri);
     return 0;
 }
