@@ -1,0 +1,29 @@
+// Largest of 3 numbers using nested if
+#include <stdio.h>
+
+
+int main(){
+    int a,b,c;
+    printf("Enter the first value :");
+    scanf("%d",&a);
+    printf("Enter the secong value :");
+    scanf("%d",&b);
+    printf("Enter the third value :");
+    scanf("%d",&c);
+    if(a>b){
+        if(a>c){
+            printf("%d is the largest value",a);
+        }else{
+            printf("%d is the largest value",c);
+        }
+    }else{
+        if(b>c){
+            printf("%d is the largest value",b);
+            
+        }else{
+            printf("%d is the largest value",c);
+        }
+    }
+    return 0;
+
+}
