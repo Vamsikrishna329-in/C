@@ -1,0 +1,16 @@
+//swapping two numbers without using a third variable
+//Using Bitwise XOR
+#include<stdio.h>
+int main(){
+  int a,b;  
+  printf("Enter the first number:");
+  scanf("%d",&a);
+  printf("Enter the second number:");
+  scanf("%d",&b);
+  printf("Values Before swapping a= %d,b = %d:\n",a,b);
+  a = a ^ b;
+  b = a ^ b;
+  a = a ^ b;
+  printf("Values After swapping a= %d,b = %d:",a,b);
+  return 0;
+}
