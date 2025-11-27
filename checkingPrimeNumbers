@@ -1,0 +1,29 @@
+// To Check a Number is a prime or non-prime
+#include <stdio.h>
+
+int main() {
+    int number;
+    int count = 0;
+
+    printf("Enter the number: ");
+    scanf("%d", &number);
+
+    if (number <= 1) {
+        printf("Enter a valid number greater than 1\n");
+        return 0;
+    }
+
+    for (int i = 1; i <= number; i++) {
+        if (number % i == 0) {
+            count++;
+        }
+    }
+
+    if (count == 2) {
+        printf("Number is a Prime\n");
+    } else {
+        printf("Number is a Non-prime\n");
+    }
+
+    return 0;
+}
